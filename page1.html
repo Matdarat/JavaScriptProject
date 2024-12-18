@@ -1,71 +1,82 @@
 <!DOCTYPE html>
 <head>
-    <style>
-        #divTitle {
-            border: 8px outset teal;
-            background-color: rgb(208, 238, 255);
-            text-align: center;
-            width: 800px;
-            /*width: 80%;*/
-        }
-        #divNavigation {
-            border: 8px outset palegreen;
-            background-color: rgb(208, 238, 255);
-            text-align: center;
-            width: 33%;
-            float: right;
-            position: fixed;
-        }
-        .divBanner {
-            border: 8px outset teal;
-            background-color: rgb(208, 238, 255);
-            text-align: center;
-            width: 900px;
-        }
-        .divInner {
-            border: 3px outset teal;
-            background-color: rgb(208, 238, 255);
-            text-align: center;
-            width: 800px;
-            padding: 3px;
-        }
-        .column {
-            border: 3px outset teal;
-            background-color: rgb(208, 238, 255);
-            text-align: center;
-            width: 400px;
-            float: left;
-        }
-    </style>
-    <div id="divNavigation">
-        link
-    </div>
-    <div id;="divTitle">
-        <h1>Mateo Valencia's Portfolio</h1>
-    </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Page</title>
+  <link rel="stylesheet" href="format.css">
+
+  <style>
+    #divTitle {
+        border: 8px outset teal;
+        background-color: rgb(208, 238, 255);
+        text-align: center;
+        width: 800px;
+        /*width: 80%;*/
+    }
+    #divNavigation {
+        border: 8px outset palegreen;
+        background-color: rgb(208, 238, 255);
+        text-align: center;
+        width: 33%;
+        float: right;
+        position: fixed;
+    }
+    .divBanner {
+        border: 8px outset teal;
+        background-color: rgb(208, 238, 255);
+        text-align: center;
+        width: 900px;
+    }
+    .divInner {
+        border: 3px outset teal;
+        background-color: rgb(208, 238, 255);
+        text-align: center;
+        width: 800px;
+        padding: 3px;
+    }
+    .column {
+        border: 3px outset teal;
+        background-color: rgb(208, 238, 255);
+        text-align: center;
+        width: 400px;
+        float: left;
+    }
+</style>
+
+<div class="header2">
+    <a href="page1.html" target="_blank">Biography</a>
+    
+    <a href="page2.html" target="_blank">Activities</a>
+
+    <a href="page3.html" target="_blank">Miscellaneous</a>
+</div>
+
+<div class="header">Mateo's Portfolio</div>
 </head>
 
 <body>
-    <div class;="divBanner">
-        Biography:
-        <div class="column">
-            Pic
-        </div>
-        <div class;="column">
-            Hello, my name is Mateo and this is my portfolio.
-        </div>
-        <div class="divBanner">
-            Facts:
-            <div class="divInner">
-                <div>Age: 17</div>
-                <div>Weight: 170 lbs</div>
-                <div></div>Height: 5'9.5"</div>
-                <div>Favorite Food: Albondigas</div>
-                <div>Favorite Dessert: idk pie?</div>
-                <div>Favorite Movie: idk... Star Wars movies?</div>
-                <div>Favorite Subject: Physics</div>
-                <div>Least Favorite Subject: TASC or History</div>
-            </div>
-        </div>
+
+  <div class="section-container">
+
+    <div class="section">Section 1: Biography: </div>
+
+    <div class="divInner">
+        <div>Age: 17</div>
+        <div>Weight: 170 lbs</div>
+        <div>Height: 5'9.5"</div>
+        <div>Favorite Food: Albondigas</div>
+        <div>Favorite Dessert: idk pie?</div>
+        <div>Favorite Movie: idk... Star Wars movies?</div>
+        <div>Favorite Subject: Physics</div>
+        <div>Least Favorite Subject: TASC or History</div>
     </div>
+
+    <div class="section">Pictures</div>
+
+  </div>
+
+</div>
+
 </body>
+
+</html>
