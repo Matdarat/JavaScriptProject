@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Styled Page</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="format.css">
 
   <style>
@@ -74,11 +74,11 @@
     <div class="section">Pictures</div>
 
     <div class="divInner">
-        <img src="istockphoto-2133442992-612x612.jpg" alt="Me">
+        <img id="img" src="istockphoto-2133442992-612x612.jpg" alt="Me" class="glow">
 
-        <img src="Albondigas_Soup_Mexican_Meatballs_Soup_0-720x540.jpg" alt="Me">
+        <img src="Albondigas_Soup_Mexican_Meatballs_Soup_0-720x540.jpg" alt="Me" class="glow">
 
-        <img src="09piesrex4-lemon-cqtk-superJumbo.jpg" alt="Me">
+        <img src="09piesrex4-lemon-cqtk-superJumbo.jpg" alt="Me" class="glow">
     </div>
 
   </div>
@@ -86,7 +86,20 @@
 </div>
 
 <script>
-    s
+    const pics = document.getElementById('img');
+    /* const pics = document.getElementsByTagName('img'); */
+
+    const glowEffect = '0 0 20px 10px rgba(0, 300, 255, 0.8)';
+
+    const defaultEffect = 'none';
+
+    image.addEventListener('mouseenter', () => {
+        pics.style.boxShadow = glowEffect;
+    });
+
+    image.addEventListener('mouseleave', () => {
+        pics.style.boxShadow = defaultEffect;
+    });
 </script>
 
 </body>
